@@ -1,0 +1,29 @@
+APP主组件引入：
+TodoList 组件
+
+APP主组件新建数据，向子组件传
+在template绑定参数：todos 属性绑定到表达式 todos 的值。
+在Todolist组件中用Props表示接收数据
+
+points:
+v-show
+.filter
+
+新建Todo组件，传输todo模板
+在todolist组件中重构代码，呈现todo组件 利用v-for和index
+
+编辑界面：
+在todo中返回数据中设定一个布尔值，前面是否编辑分别展示两套模板
+在编辑框中用v-model绑定值
+
+删除list：
+子向父传值：在todo新建一个方法，内容是this.$emit('delete-todo', todo)，第一个参数是父的函数，第二个参数是自己组件的参数
+父组件用一个事件处理程序处理删除操作
+父组件上面tem绑定上方法，传给子组件这个方法
+
+新建Todo
+创建一个新组件createTodo，是一个按钮，点击则变成一个表单
+设定确认的按钮，把数据传递给父组件，父组件中函数设定好
+
+完成todo
+新建函数，传给父组件
